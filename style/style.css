@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color--back: #000000;
+    --color--text: #FFFFFF;
+    --color--details: #22D4FD;
+
+    --font--one: "Montserrat", sans-serif;
+    --font--two: "Krona One", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color--back);
+    color:var(--color--text);
+    box-sizing: border-box;
+}
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color--details);
+    text-decoration: none;
+
+}
+
+.titulo-destaque{
+    color: var(--color--details); 
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 15%;
+    gap: 82px;
+  }
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.25rem;
+    font-family: var(--font--two);
+}
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--font--one)
+}
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion__enlace__link{
+    width: 50%;
+    
+    text-align: center;
+    padding: 21.5px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 1px solid var(--color--details);
+    
+    font-size: 1.5rem;
+    font-family: var(--font--one);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color--text);
+
+}
+.presentacion__enlace__link:hover{
+    background-color: var(--color--back)
+}
+.presentacion__imagen{
+    width:50%;
+}
+.presentacion__enlaces__subtitulos{
+    font-family: var(--font--two);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.footer{
+    background-color: var(--color--details);
+    padding: 1.5rem;
+    color: var(--color--back);
+    text-align: center;
+    font-family: var(--font--one);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media (max-width:1200px){
+    .presentacion{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5%;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+}
